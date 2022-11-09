@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+        <title>season survey form</title>
+        <link rel="stylesheet" href="survey-style.css">
+<link href="#" family="#" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+<!--header-->
+  <header><div><h1 id="title">Favourite season form</h1></div></header>
+
+<main>
+<div class="master-div">
+<div class="description"><p id="description">Tell us about your favourite season</p></div>
+
+<form id="survey-form" action="/do-something">
+    <div class="form-rows">
+        <div class="labels">
+            <label for="name" id="name-label">Name</label>
+        </div>
+        <div class="fields"><input type="text" id="name" class="input-fields" placeholder="Enter your name" required></div>
+    </div>
+    
+    <div class="form-rows">
+        <div class="labels">
+            <label for="email" id="email-label">Email</label>
+        </div>
+        <div class="fields"><input type="text" id="email" class="input-fields" placeholder="Enter your email address" optional></div>
+    </div>
+    
+    <div class="form-rows">
+        <div class="labels">
+            <label for="choose-favourite">Choose your  favourite season:</label>
+        </div>
+        <div class="fields"> <ul id="choose-favourite" style="list-style:none;">
+            <li class="radio">
+                <label>Spring
+                    <input name="time-radio" type="radio" value="1" class="user-selection">
+                </label>
+            </li>
+            <li class="radio">
+                <label>Summer
+                    <input name="time-radio" type="radio" value="1" class="user-selection">
+                </label>
+            </li>
+            <li class="radio">
+                <label>Fall
+                    <input name="time-radio" type="radio" value="1" class="user-selection">
+                </label>
+            </li>
+            <li class="radio">
+                <label>Winter
+                    <input name="time-radio" type="radio" value="1" class="user-selection">
+                </label>
+            </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="form-rows">
+        <div class="labels">
+            <label for="number" id="number-label">Rate your liking on a scale of 1-5</label>
+        </div>
+        <div class="fields"><input type="number" id="number" class="input-fields" placeholder="Enter a number between 1 and 5" min="1" max="5"></div>
+    </div>
+    
+    <div class="form-rows">
+        <div class="labels">
+            <label for="dropdown" id="dropdown-label">You prefer to stay?</label>
+        </div>
+        <div class="fields"><select name="in-out" id="dropdown" class="dropdown">
+            <option value="indoors">Mostly indoors</option>
+            <option value="out">Mostly outdoors</option>
+            <option value="out">Both indoors and outdoors</option>
+          
+        </select>
+        </div>
+    </div>
+    
+    <div class="form-rows">
+        <div class="labels">
+            <label for="months">Choose your favourite months of the year.<br>(Select all that apply)</label>
+        </div>
+        <div class="fields"><ul id="months" style="list-style:none;">
+        <li class="radio">
+            <label>
+                <input name="month-check" value="1" type="checkbox" class="user-selection">
+            January</label></li>
+            <li class="radio">
+                <label>
+                    <input name="month-check" value="1" type="checkbox" class="user-selection">
+                February</label></li>
+                <li class="radio">
+                    <label>
+                        <input name="month-check" value="1" type="checkbox" class="user-selection">
+                    March</label></li>
+                    <li class="radio">
+                        <label>
+                            <input name="month-check" value="1" type="checkbox" class="user-selection">
+                        April</label></li>
+                        <li class="radio">
+                            <label>
+                                <input name="month-check" value="1" type="checkbox" class="user-selection">
+                            May</label></li>
+                            <li class="radio">
+                                <label>
+                                    <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                June</label></li>
+                                <li class="radio">
+                                    <label>
+                                        <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                    July</label></li>
+                                    <li class="radio">
+                                        <label>
+                                            <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                        August</label></li>
+                                        <li class="radio">
+                                            <label>
+                                                <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                            September</label></li>
+                                            <li class="radio">
+                                                <label>
+                                                    <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                                October</label></li>
+                                                <li class="radio">
+                                                    <label>
+                                                        <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                                    November</label></li>
+                                                    <li class="radio">
+                                                        <label>
+                                                            <input name="month-check" value="1" type="checkbox" class="user-selection">
+                                                        December</label></li>
+        
+        </ul>
+        </div>
+    </div>
+
+    <div class="form-rows">
+        <div class="labels">
+            <label for="event-details">Please describe in detail what you like the most about your favourite season.</label>
+        </div>
+        <div class="fields">
+            <textarea id="event-details" class="input-fields" style="height:50px;resize:vertical;" name="event-details" cols="1" rows="1"
+            placeholder="Enter your thoughts here..."></textarea>
+        </div>
+    </div>
+
+    <button class="button" id="submit" type="submit">Submit</button>
+</form>
+</div>
+</main>
+</body>
+</html>
